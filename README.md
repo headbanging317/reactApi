@@ -1,10 +1,25 @@
 # react-koa-boilerplate
 * react
-* koa
 * react-router
+* react-hot-loader
+* webpack
+* redux
+* axios
+* Server Side Rendering
+* Code Splitting
 
 
-1.Project Directory Structure
+1.설치 및 실행
+--
+<pre>
+    yarn install            //패키지 설치
+    yarn build              //react build
+    yarn build:server       //server build
+    yarn start              //react start
+    yarn start:server       //server start
+</pre>
+
+2.Project Directory Structure
 --
 
 * src/components : 각 컴포넌트들이 위치하는 디렉토리
@@ -15,4 +30,6 @@
 * src/lib : 웹 연동을 구현할 때 사용할 API와 코드스플리팅을 할 때 필요한 코드
 
 
-
+참고
+--
+* velopert님의 블로그 글(https://velopert.com/3411)
