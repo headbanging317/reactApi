@@ -8,6 +8,7 @@
 * Server Side Rendering
 * Code Splitting
 
+<br />
 
 1.설치 및 실행
 --
@@ -19,6 +20,8 @@
     yarn start:server       //server start
 </pre>
 
+<br />
+
 2.Project Directory Structure
 --
 
@@ -29,6 +32,7 @@
 * src/shared : 서버와 클라이언트에서 공용으로 사용되는 컴포넌트
 * src/lib : 웹 연동을 구현할 때 사용할 API와 코드스플리팅을 할 때 필요한 코드
 
+<br />
 
 참고
 --
