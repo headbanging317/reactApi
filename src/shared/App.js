@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, About, Posts, Users } from 'pages';
+import { Home, About, Posts, Users, Result } from 'pages';
 import { Helmet } from "react-helmet";
 import Menu from 'components/Menu';
+import Search from 'components/Search';
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
                 <Helmet>
                     <title>React Router & SSR</title>
                 </Helmet>
+                <Search />
                 <Menu/>
                 <Route exact path="/" component={Home}/>
                 <Route path="/posts" component={Posts}/>
@@ -19,6 +21,7 @@ class App extends Component {
                     <Route path="/about" component={About}/>
                 </Switch>
                 <Route path="/users" component={Users}/>
+                <Route path="/api" component={Result}/>
             </div>
         );
     }
