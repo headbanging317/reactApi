@@ -6,10 +6,12 @@ const request = require('request');
 const rp = require('request-promise');
 const cheerio = require('cheerio');
 const myJSON = require('JSON');
+const request2 = require('request-json');
+
 // const myJSON = require('JSON');
 const url = 'https://kr.api.riotgames.com/lol/summoner/v3/summoners/by-name/%ED%97%A4%EB%93%9C%EB%B1%85%EC%9E%89?api_key=RGAPI-9e84209b-b5a3-4459-b67c-1de6986f095b';
 const url2 = 'https://jsonplaceholder.typicode.com/users';
-
+var client = request2.createClient('https://jsonplaceholder.typicode.com');
 const a = ''
 
 var options = {
@@ -22,19 +24,25 @@ var options = {
     json: true  // Automatically parses the JSON string in the response
 };
 
-const crawl = () => {
-    var a = '';
-    rp(options).then(function (repos) {
-        // console.log('User has %d repos', repos.length);
-        a = JSON.stringify(repos)
-        // console.log(repos)
-        return repos
-    }).catch(function (err) {
-        // console.log(err);
-    })
-    // return a;
-}
+var k = '';
+// var c = 'Hello';
 
+// const crawl = () => {
+//     var d;
+//     rp(options).then(function (repos) {
+//         // console.log('User has %d repos', repos.length);
+//         d = repos
+//         // console.log(k)
+//         return repos;
+//     }).catch(function (err) {
+//         console.log(err);
+//     })
+//     // return JSON.stringify(a);
+//     // return JSON.stringify(d);
+//     return d;
+// }
+
+// console.log(JSON.parse(crawl().d))
 
 // function crawl(callback) {
 //     request(options, function(error, response, body) {
@@ -138,4 +146,4 @@ const crawl = () => {
 //     });
 // }
 
-module.exports = crawl;
+// module.exports = crawl;

@@ -1,4 +1,6 @@
-const Crawl = require('./crawl')
+// const Crawl = require('./crawl')
+
+const api = require('./api')
 // const api = require('./api')
 // const app = new Crawl();
 
@@ -7,20 +9,23 @@ const Crawl = require('./crawl')
 // console.log(Crawl());
 // const a = Crawl;
 const url =  'https://jsonplaceholder.typicode.com/users';
-var a;
+// var a;
 
-
+api.getUsers()
+// Crawl()
+// console.log(Crawl())
 // var b = Crawl(function(data) {
 //     return data;
 // });
 
 // console.log(a);
-var nameString = function (name) {
-    return "Hi, I am" + " " + name
 
-}
+// var nameString = function (name) {
+//     return "Hi, I am" + " " + name
 
-console.log(nameString("Amir"))
+// }
+
+// console.log(nameString("Amir"))
 
 // console.log(a);
 // console.log(a)
