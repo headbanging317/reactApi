@@ -15,12 +15,14 @@ class Users extends Component {
 
     render() {
         const { data } = this.props;
-
+        
         // 유저 이름 목록을 생성합니다
         const userList = data.map(
             user => <li key={user.id}>{user.name}</li>
         );
         
+        console.log(data)
+
         return (
             <div>
                 <ul>
