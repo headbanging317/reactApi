@@ -1,4 +1,6 @@
 import axios from 'axios';
+import jsonp from 'jsonp';
+import rp from 'request-promise';
 // const request = require('request');
 // // const crawl = require('./crawl');
 // const Koa = require('koa');
@@ -19,7 +21,42 @@ import axios from 'axios';
 // };
 // export const getStat = () => crawl.getStat;
 
-export const getUsers = () => axios.get('https://jsonplaceholder.typicode.com/users');
+const config = {
+    headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE,OPTIONS',
+        'Access-Control-Max-Age': '3600',
+        'Access-Control-Allow-Headers': 'Origin,Accept,X-Requested-With,Content-Type,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization',
+        'Content-Type': 'application/json',
+        // 'data-Type': 'jsonp',
+        // Accept: 'Application/json'
+    }
+    
+}
+const url = 'https://kr.api.battle.net/wow/character/azshara/%EC%8B%9C%EC%9A%B0%EB%8B%88?locale=ko_KR&apikey=4z9765hug4z2pyfhuhj2rga9xmvj7474'
+const url2 = 'https://jsonplaceholder.typicode.com/users';
+const options = {
+    url: url2,
+    method: 'GET',
+    headers : {
+        'User-Agent': 'Super Agent/0.0.1',
+        'Content-Type': 'application/w-xx-form-unlenconded'
+    }
+}
+
+export const getUsers = () => axios.get('https://jsonplaceholder.typicode.com/users', config).then(console.log(rp(options)));
+export const getId = () => axios.get(url2)
+// .then(function(res) {
+//     console.log(res);
+// }).catch(function(res) {
+//     if(res instanceof Error) {
+//         console.log(res.message);
+//     } else {
+//         console.log(res);
+//     }
+// })
+// export const getId =() => axios.get(url2)
+// export const getId = () => rp(options).then(console.log('Hello RP'));
 
 
 // export const getId = () => router.get('/api', (req, res, next) => {
