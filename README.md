@@ -2,7 +2,7 @@
 
 # reactApi
 
-* This WebApp is a Game League of Legend score search page like a <a href="http://op.gg">OP.GG</a> using <a href="https://developer.riotgames.com/">public Riot API</a>
+* This WebApp is a Game League of Legend score search page like a <a href="http://op.gg">OP.GG</a> using a <a href="https://developer.riotgames.com/">public Riot API</a>
 
 ## Stack
 * React.js
