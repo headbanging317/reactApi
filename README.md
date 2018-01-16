@@ -1,7 +1,7 @@
 <h1>Currently under development</h1>
 Incompletion Project
 ![1](./images/under.png)
-
+![1](./images/under.png)
 # reactApi
 
 * This WebApp is a Game League of Legend score search page like a <a href="http://op.gg">OP.GG</a> using a <a href="https://developer.riotgames.com/">public Riot API</a>
