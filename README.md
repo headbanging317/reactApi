@@ -25,5 +25,5 @@
 * src/lib : Code to use at code spliting and API to use at Web interworking
 
 
-## Refference
+## Reference
 <a href="https://velopert.com/">VELOPERT.LOG</a>
