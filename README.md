@@ -2,7 +2,7 @@
 
 # reactApi
 
-* This WebApp is a Game League of Legend score search page like a http://op.gg
+* This WebApp is a Game League of Legend score search page like a <a href="http://op.gg">OP.gg</a>
 
 ## Stack
 * React.js
